@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DM Care</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--  String Menu  -->
+    <string name="edukasi">Edukasi</string>
+    <string name="nutrisi">Nutrisi</string>
+    <string name="aktivitas">Aktivitas</string>
+    <string name="pantau">Pantau</string>
+    <string name="pengobatan">Pengobatan</string>
+
+</resources>

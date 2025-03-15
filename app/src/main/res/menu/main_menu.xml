@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/BottomEducationFragment"
+        android:icon="@drawable/ic_education_24"
+        android:title="@string/edukasi"/>
+
+    <item
+        android:id="@+id/BottomNutritionFragment"
+        android:icon="@drawable/ic_nutrition_24"
+        android:title="@string/nutrisi"/>
+
+    <item
+        android:id="@+id/BottomActivitiesFragment"
+        android:icon="@drawable/ic_activity_24"
+        android:title="@string/aktivitas"/>
+
+    <item
+        android:id="@+id/BottomMonitorFragment"
+        android:icon="@drawable/ic_monitor_24"
+        android:title="@string/pantau"/>
+
+    <item
+        android:id="@+id/BottomTreatmentFragment"
+        android:icon="@drawable/ic_medic_24"
+        android:title="@string/pengobatan"/>
+</menu>

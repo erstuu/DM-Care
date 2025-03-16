@@ -1,10 +1,7 @@
 package com.health.dmcare.activity
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.health.dmcare.R
@@ -28,6 +25,21 @@ class MainActivity : AppCompatActivity() {
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         val navController = navHostFragment.navController
         bottomNavigation.setupWithNavController(navController)
+
+        // Hide bottom navigation bar when navigating to certain fragments
+        navController.addOnDestinationChangedListener { _, destination, _ ->
+            when (destination.id) {
+                R.id.detailDescriptionDiabetesFragment,
+                R.id.detailSignAndSymptomsFragment,
+                R.id.detailDangerDiabetesFragment,
+                R.id.detailFactorDiabetesFragment -> {
+                    bottomNavigation.visibility = android.view.View.GONE
+                }
+                else -> {
+                    bottomNavigation.visibility = android.view.View.VISIBLE
+                }
+            }
+        }
     }
 
     override fun onDestroy() {

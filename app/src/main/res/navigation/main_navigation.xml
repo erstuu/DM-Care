@@ -7,7 +7,40 @@
 
     <fragment
         android:id="@+id/educationFragment"
-        android:name="com.health.dmcare.fragment.EducationFragment"
+        android:name="com.health.dmcare.fragment.education.EducationFragment"
         android:label="fragment_education"
-        tools:layout="@layout/fragment_education" />
+        tools:layout="@layout/fragment_education" >
+        <action
+            android:id="@+id/action_educationFragment_to_detailDescriptionDiabetesFragment"
+            app:destination="@id/detailDescriptionDiabetesFragment" />
+        <action
+            android:id="@+id/action_educationFragment_to_detailSignAndSymptomsFragment"
+            app:destination="@id/detailSignAndSymptomsFragment" />
+        <action
+            android:id="@+id/action_educationFragment_to_detailDangerDiabetesFragment"
+            app:destination="@id/detailDangerDiabetesFragment" />
+        <action
+            android:id="@+id/action_educationFragment_to_detailFactorDiabetesFragment"
+            app:destination="@id/detailFactorDiabetesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailDescriptionDiabetesFragment"
+        android:name="com.health.dmcare.fragment.education.DetailDescriptionDiabetesFragment"
+        android:label="fragment_detail_description_diabetes"
+        tools:layout="@layout/fragment_detail_description_diabetes" />
+    <fragment
+        android:id="@+id/detailSignAndSymptomsFragment"
+        android:name="com.health.dmcare.fragment.education.DetailSignAndSymptomsFragment"
+        android:label="fragment_detail_sign_and_symptoms"
+        tools:layout="@layout/fragment_detail_sign_and_symptoms" />
+    <fragment
+        android:id="@+id/detailDangerDiabetesFragment"
+        android:name="com.health.dmcare.fragment.education.DetailDangerDiabetesFragment"
+        android:label="fragment_detail_danger_diabetes"
+        tools:layout="@layout/fragment_detail_danger_diabetes" />
+    <fragment
+        android:id="@+id/detailFactorDiabetesFragment"
+        android:name="com.health.dmcare.fragment.education.DetailFactorDiabetesFragment"
+        android:label="fragment_detail_factor_diabetes"
+        tools:layout="@layout/fragment_detail_factor_diabetes" />
 </navigation>

@@ -17,4 +17,30 @@
     <string name="kami_pasti_akan_mengujimu_dengan_sedikit_ketakutan_dan_kelaparan_kekurangan_harta_jiwa_dan_buah_buahan_sampaikanlah_wahai_nabi_muhammad_kabar_gembira_kepada_orang_orang_sabar_yaitu_orang_orang_yang_apabila_ditimpa_musibah_mereka_mengucapkan_inn_lill_hi_wa_inn_ilaihi_r_ji_n_sesungguhnya_kami_adalah_milik_allah_dan_sesungguhnya_hanya_kepada_nya_kami_akan_kembali_mereka_itulah_yang_memperoleh_ampunan_dan_rahmat_dari_tuhannya_dan_mereka_itulah_orang_orang_yang_mendapat_petunjuk_n_n_qs_al_baqarah_2_155_157"><![CDATA[“Kami pasti akan mengujimu dengan sedikit ketakutan dan kelaparan, kekurangan harta, jiwa, dan buah-buahan. Sampaikanlah [wahai Nabi Muhammad], kabar gembira kepada orang-orang sabar, [yaitu] orang-orang yang apabila ditimpa musibah, mereka mengucapkan ‘Innā lillāhi wa innā ilaihi rāji‘ūn’ [sesungguhnya kami adalah milik Allah dan sesungguhnya hanya kepada-Nya kami akan kembali]. Mereka itulah yang memperoleh ampunan dan rahmat dari Tuhannya dan mereka itulah orang-orang yang mendapat petunjuk,” \n\n(QS. Al-Baqarah [2]:155-157)]]></string>
     <string name="lanjutkan">Lanjutkan</string>
 
+    <!--  String Education  -->
+    <string name="selamat_pagi">Selamat Pagi,</string>
+    <string name="sobat_dm_care">Sobat DM Care</string>
+    <string name="apa_saja_yang_perlu_anda_nketahui_tentang_ndiabetes_melitus">Apa saja yang perlu anda\nketahui tentang\nDiabetes Melitus?</string>
+    <string name="banner_definisi_diabetes">banner_definisi_diabetes</string>
+    <string name="ketuk_di_sini">Ketuk di sini!</string>
+    <string name="tanda_dan_gejala">Tanda dan Gejala</string>
+    <string name="lihat_selengkapnya">Lihat Selengkapnya</string>
+    <string name="bahaya_diabetes_melitus">Bahaya Diabetes Melitus</string>
+    <string name="gambar_bahaya_diabetes_melitus_tidak_terkontrol">gambar bahaya diabetes melitus tidak terkontrol</string>
+    <string name="bahaya_diabetes_melitus_nyang_tidak_terkontrol">Bahaya Diabetes Melitus\nyang tidak terkontrol</string>
+    <string name="komplikasi_kronis_n_dalam_waktu_lama">Komplikasi Kronis\n(dalam waktu lama)</string>
+    <string name="gambar_faktor_diabetes_melitus">gambar faktor diabetes melitus</string>
+    <string name="faktor_resiko_diabetes_nmelitus">7 Faktor Resiko Diabetes\nMelitus</string>
+    <string name="kumpulan_gambar_tanda_dan_gejala">kumpulan gambar tanda dan gejala</string>
+    <string name="detail">Detail</string>
+    <string name="tanda_dan_gejala_penyakit_diabetes_melitus">Tanda dan Gejala penyakit Diabetes Melitus</string>
+    <string name="bahaya_diabetes_melitus_yang_tidak_terkontrol">Bahaya Diabetes Melitus\nyang tidak terkontrol</string>
+    <string name="faktor_resiko_ndiabetes_melitus">7 Faktor Resiko\nDiabetes melitus</string>
+    <string name="apakah_diabetes_melitus_itu">Apakah Diabetes Melitus itu?</string>
+    <string name="suatu_penyakit_atau_gangguan_metabolisme_kronis_yang_ditandai_dengan_tingginya_kadar_gula_darah_akibat_dari_kekurangan_insulin">Suatu penyakit atau gangguan metabolisme kronis yang ditandai dengan tingginya kadar Gula Darah akibat dari kekurangan insulin.</string>
+    <string name="_1_gula_darah_sewaktu_200_mg_dl_n2_gula_darah_puasa_tidak_ada_masukan_n3_gula_darah_saat_makan_makanan_kalori_dalam_t_t10_jam_terakhir_126_mg_dl_n4_gula_plasma_2_jam_180_mg_dl"><![CDATA[1. Gula darah sewaktu > 200 mg/dl\n2. Gula darah puasa (tidak ada masukan\n3. Gula darah saat makan (makanan/kalori dalam \t\t10 jam terakhir) > 126 mg/dl\n4. Gula plasma 2 jam > 180 mg/dl]]></string>
+
+    <!--  String Detail Sign and Symptoms  -->
+
+
 </resources>

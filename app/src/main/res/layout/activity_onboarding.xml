@@ -5,6 +5,97 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".activity.OnboardingActivity">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="360dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/gambar_orang_berdoa"
+        android:src="@drawable/onboarding_doa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardViewOnboarding"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="16dp"
+            android:paddingHorizontal="16dp">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/marilah_sama_sama_nmenyebut_asma_allah"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/bismillah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/bismillaahirrahmanirrahiim"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/textView1"
+                app:layout_constraintStart_toStartOf="@+id/textView1"
+                app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins"
+                android:text="@string/kami_pasti_akan_mengujimu_dengan_sedikit_ketakutan_dan_kelaparan_kekurangan_harta_jiwa_dan_buah_buahan_sampaikanlah_wahai_nabi_muhammad_kabar_gembira_kepada_orang_orang_sabar_yaitu_orang_orang_yang_apabila_ditimpa_musibah_mereka_mengucapkan_inn_lill_hi_wa_inn_ilaihi_r_ji_n_sesungguhnya_kami_adalah_milik_allah_dan_sesungguhnya_hanya_kepada_nya_kami_akan_kembali_mereka_itulah_yang_memperoleh_ampunan_dan_rahmat_dari_tuhannya_dan_mereka_itulah_orang_orang_yang_mendapat_petunjuk_n_n_qs_al_baqarah_2_155_157"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/bismillah"
+                app:layout_constraintVertical_bias="0.058" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_onboarding"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/button_background"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingHorizontal="25dp"
+                android:paddingVertical="10dp"
+                android:text="@string/lanjutkan"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

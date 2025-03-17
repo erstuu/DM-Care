@@ -4,9 +4,9 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.health.dmcare.databinding.ItemRvDetailTandaDanGejalaBinding
-import com.health.dmcare.models.TandaGejalaDiabetes
+import com.health.dmcare.models.DataCardDiabetes
 
-class StaggeredAdapter(private val items: List<TandaGejalaDiabetes>)
+class StaggeredAdapter(private val items: List<DataCardDiabetes>)
     : RecyclerView.Adapter<StaggeredAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -21,7 +21,7 @@ class StaggeredAdapter(private val items: List<TandaGejalaDiabetes>)
     override fun getItemCount() = items.size
 
     inner class ViewHolder(private val binding: ItemRvDetailTandaDanGejalaBinding) : RecyclerView.ViewHolder(binding.root) {
-        fun bind(items: TandaGejalaDiabetes) {
+        fun bind(items: DataCardDiabetes) {
             binding.ivTandaDanGejala.setImageResource(items.image)
             binding.tvTitTandaDanGejala.text = items.title
         }

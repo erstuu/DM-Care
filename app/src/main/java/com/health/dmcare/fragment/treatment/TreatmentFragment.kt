@@ -1,4 +1,4 @@
-package com.health.dmcare.fragment
+package com.health.dmcare.fragment.treatment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,15 +9,12 @@ import android.view.WindowManager
 import androidx.core.content.ContextCompat
 import androidx.media3.common.MediaItem
 import androidx.media3.exoplayer.ExoPlayer
-import androidx.recyclerview.widget.StaggeredGridLayoutManager
+import androidx.navigation.fragment.findNavController
 import com.health.dmcare.R
-import com.health.dmcare.adapter.ExpandStaggeredAdapter
-import com.health.dmcare.databinding.FragmentNutritionBinding
-import com.health.dmcare.models.DataCardDiabetes
-import com.health.dmcare.util.GenerateData
+import com.health.dmcare.databinding.FragmentTreatmentBinding
 
-class NutritionFragment : Fragment() {
-    private var _binding: FragmentNutritionBinding? = null
+class TreatmentFragment : Fragment() {
+    private var _binding: FragmentTreatmentBinding? = null
     private val binding get() = _binding!!
 
     private var player: ExoPlayer? = null
@@ -26,36 +23,39 @@ class NutritionFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentNutritionBinding.inflate(inflater, container, false)
+        _binding = FragmentTreatmentBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val items = GenerateData.pengaturanNutrisi()
-
+        setupAction()
         setupPlayerVideo()
-        setupRecyclerView(items)
         statusBarSetup()
     }
 
-    private fun setupRecyclerView(items: List<DataCardDiabetes>) {
-        val adapter = ExpandStaggeredAdapter(items)
-        val layoutManager = StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL)
-        binding.rvDetailSignAndSymptoms.layoutManager = layoutManager
-        binding.rvDetailSignAndSymptoms.adapter = adapter
-    }
-
     private fun setupPlayerVideo() {
-        val uri = MediaItem.fromUri("android.resource://${requireContext().packageName}/${R.raw.pengaturan_nutrisi}")
+        val uri = MediaItem.fromUri("android.resource://${requireContext().packageName}/${R.raw.panduan_konsumsi}")
 
         player = ExoPlayer.Builder(requireContext()).build().apply {
             setMediaItem(uri)
             prepare()
         }
 
-        binding.pvFaktorDiabetesMelitus.player = player
+        binding.pvPanduanKonsumsi.player = player
+    }
+
+    private fun setupAction() {
+        binding.panduanKonsumsiCard.setOnClickListener {
+            findNavController().navigate(R.id.action_treatmentFragment2_to_detailGuideComsumptionFragment)
+        }
+        binding.panduanKonsumsi2Card.setOnClickListener {
+            findNavController().navigate(R.id.action_treatmentFragment2_to_detailGuideComsumptionFragment2)
+        }
+        binding.doaCard.setOnClickListener {
+            findNavController().navigate(R.id.action_treatmentFragment2_to_detailPrayFragment)
+        }
     }
 
     @Suppress("DEPRECATION")

@@ -43,4 +43,75 @@
         android:name="com.health.dmcare.fragment.education.DetailFactorDiabetesFragment"
         android:label="fragment_detail_factor_diabetes"
         tools:layout="@layout/fragment_detail_factor_diabetes" />
+    <fragment
+        android:id="@+id/nutritionFragment"
+        android:name="com.health.dmcare.fragment.NutritionFragment"
+        android:label="NutritionFragment"
+        tools:layout="@layout/fragment_nutrition">
+    </fragment>
+    <fragment
+        android:id="@+id/detailAktivitasFisikFragment"
+        android:name="com.health.dmcare.fragment.activities.DetailAktivitasFisikFragment"
+        android:label="fragment_detail_aktivitas_fisik"
+        tools:layout="@layout/fragment_detail_aktivitas_fisik" />
+    <fragment
+        android:id="@+id/detailPerawatanKakiFragment"
+        android:name="com.health.dmcare.fragment.activities.DetailPerawatanKakiFragment"
+        android:label="fragment_detail_perawatan_kaki"
+        tools:layout="@layout/fragment_detail_perawatan_kaki" />
+    <fragment
+        android:id="@+id/detailFootExerciseFragment"
+        android:name="com.health.dmcare.fragment.activities.DetailFootExerciseFragment"
+        android:label="fragment_detail_foot_exercise"
+        tools:layout="@layout/fragment_detail_foot_exercise" />
+    <fragment
+        android:id="@+id/activitiesFragment"
+        android:name="com.health.dmcare.fragment.activities.ActivitiesFragment"
+        android:label="fragment_activities"
+        tools:layout="@layout/fragment_activities" >
+        <action
+            android:id="@+id/action_activitiesFragment_to_detailAktivitasFisikFragment"
+            app:destination="@id/detailAktivitasFisikFragment" />
+        <action
+            android:id="@+id/action_activitiesFragment_to_detailPerawatanKakiFragment"
+            app:destination="@id/detailPerawatanKakiFragment" />
+        <action
+            android:id="@+id/action_activitiesFragment_to_detailFootExerciseFragment"
+            app:destination="@id/detailFootExerciseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/treatmentFragment"
+        android:name="com.health.dmcare.fragment.treatment.TreatmentFragment"
+        android:label="fragment_treatment"
+        tools:layout="@layout/fragment_treatment" >
+        <action
+            android:id="@+id/action_treatmentFragment2_to_detailGuideComsumptionFragment"
+            app:destination="@id/detailGuideComsumptionFragment" />
+        <action
+            android:id="@+id/action_treatmentFragment2_to_detailGuideComsumptionFragment2"
+            app:destination="@id/detailGuideComsumptionFragment2" />
+        <action
+            android:id="@+id/action_treatmentFragment2_to_detailPrayFragment"
+            app:destination="@id/detailPrayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailGuideComsumptionFragment"
+        android:name="com.health.dmcare.fragment.treatment.DetailGuideComsumptionFragment"
+        android:label="fragment_detail_guide_comsumption"
+        tools:layout="@layout/fragment_detail_guide_comsumption" />
+    <fragment
+        android:id="@+id/detailGuideComsumptionFragment2"
+        android:name="com.health.dmcare.fragment.treatment.DetailGuideComsumptionFragment2"
+        android:label="fragment_detail_guide_comsumption2"
+        tools:layout="@layout/fragment_detail_guide_comsumption2" />
+    <fragment
+        android:id="@+id/detailPrayFragment"
+        android:name="com.health.dmcare.fragment.treatment.DetailPrayFragment"
+        android:label="fragment_detail_pray"
+        tools:layout="@layout/fragment_detail_pray" />
+    <fragment
+        android:id="@+id/monitoringFragment"
+        android:name="com.health.dmcare.fragment.MonitoringFragment"
+        android:label="fragment_monitoring"
+        tools:layout="@layout/fragment_monitoring" />
 </navigation>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.education.DetailSignAndSymptomsFragment">
+    android:fillViewport="true"
+    android:background="@color/background"
+    tools:context=".fragment.activities.DetailAktivitasFisikFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -33,7 +33,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView2"
             android:layout_width="0dp"
-            android:layout_height="87dp"
+            android:layout_height="67dp"
             android:layout_marginHorizontal="16dp"
             android:layout_marginTop="16dp"
             app:cardCornerRadius="8dp"
@@ -47,13 +47,13 @@
                 android:layout_gravity="start|center"
                 android:layout_marginStart="16dp"
                 android:fontFamily="@font/poppins_medium"
-                android:text="@string/tanda_dan_gejala_penyakit_diabetes_melitus"
+                android:text="@string/aktivitas_fisik"
                 android:textAppearance="@style/TextAppearance.Material3.ActionBar.Title" />
 
         </androidx.cardview.widget.CardView>
 
         <androidx.media3.ui.PlayerView
-            android:id="@+id/pv_bahaya_diabetes_melitus_yang_tidak_terkontrol"
+            android:id="@+id/pv_aktivitas_fisik"
             android:layout_width="0dp"
             android:layout_height="200dp"
             android:layout_marginHorizontal="16dp"
@@ -63,7 +63,7 @@
             app:layout_constraintTop_toBottomOf="@+id/cardView2" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_detail_sign_and_symptoms"
+            android:id="@+id/rv_aktivitas_fisik"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="13dp"
@@ -71,7 +71,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/pv_bahaya_diabetes_melitus_yang_tidak_terkontrol" />
+            app:layout_constraintTop_toBottomOf="@+id/pv_aktivitas_fisik"
+            app:layout_constraintVertical_bias="0.0" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.core.widget.NestedScrollView>
 
+</androidx.core.widget.NestedScrollView>

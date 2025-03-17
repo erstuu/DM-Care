@@ -1,4 +1,4 @@
-package com.health.dmcare.fragment.education
+package com.health.dmcare.fragment.activities
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,20 +6,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
-import androidx.appcompat.app.AlertDialog
 import androidx.core.content.ContextCompat
 import androidx.media3.common.MediaItem
 import androidx.media3.exoplayer.ExoPlayer
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.health.dmcare.R
-import com.health.dmcare.adapter.StaggeredAdapter
-import com.health.dmcare.databinding.FragmentDetailFactorDiabetesBinding
+import com.health.dmcare.adapter.ExpandStaggeredAdapter
+import com.health.dmcare.databinding.FragmentDetailPerawatanKakiBinding
 import com.health.dmcare.models.DataCardDiabetes
 import com.health.dmcare.util.GenerateData
 
-class DetailFactorDiabetesFragment : Fragment() {
-    private var _binding: FragmentDetailFactorDiabetesBinding? = null
+class DetailPerawatanKakiFragment : Fragment() {
+    private var _binding: FragmentDetailPerawatanKakiBinding? = null
     private val binding get() = _binding!!
 
     private var player: ExoPlayer? = null
@@ -28,37 +27,25 @@ class DetailFactorDiabetesFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentDetailFactorDiabetesBinding.inflate(inflater, container, false)
+        _binding = FragmentDetailPerawatanKakiBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val items = GenerateData.faktorDiabetesMelitus()
-
         statusBarSetup()
         setupToolbar()
-        setupPlayerVideo()
-        setupRecyclerView(items)
-        setupDialog()
-    }
 
-    private fun setupDialog() {
-        AlertDialog.Builder(requireContext())
-            .setTitle(getString(R.string.title_renungan))
-            .setMessage(getString(R.string.content_renungan_factor_page))
-            .setPositiveButton(getString(R.string.oke)) { dialog, _ ->
-                dialog.dismiss()
-            }
-            .setCancelable(false)
-            .show()
+        val items = GenerateData.perawatanKaki()
+        setupRecyclerView(items)
+        setupPlayerVideo()
     }
 
     private fun setupRecyclerView(items: List<DataCardDiabetes>) {
-        val adapter = StaggeredAdapter(items)
+        val adapter = ExpandStaggeredAdapter(items)
         val layoutManager = StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL)
-        binding.rvDetailSignAndSymptoms.layoutManager = layoutManager
-        binding.rvDetailSignAndSymptoms.adapter = adapter
+        binding.rvPerawatanKaki.layoutManager = layoutManager
+        binding.rvPerawatanKaki.adapter = adapter
     }
 
     @Suppress("DEPRECATION")
@@ -81,14 +68,14 @@ class DetailFactorDiabetesFragment : Fragment() {
     }
 
     private fun setupPlayerVideo() {
-        val uri = MediaItem.fromUri("android.resource://${requireContext().packageName}/${R.raw.faktor_resiko}")
+        val uri = MediaItem.fromUri("android.resource://${requireContext().packageName}/${R.raw.perawatan_kaki}")
 
         player = ExoPlayer.Builder(requireContext()).build().apply {
             setMediaItem(uri)
             prepare()
         }
 
-        binding.pvFaktorDiabetesMelitus.player = player
+        binding.pvPerawatanKaki.player = player
     }
 
     override fun onStop() {

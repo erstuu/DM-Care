@@ -1,4 +1,4 @@
-package com.health.dmcare.fragment.education
+package com.health.dmcare.fragment.activities
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
-import androidx.appcompat.app.AlertDialog
 import androidx.core.content.ContextCompat
 import androidx.media3.common.MediaItem
 import androidx.media3.exoplayer.ExoPlayer
@@ -14,12 +13,12 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.health.dmcare.R
 import com.health.dmcare.adapter.StaggeredAdapter
-import com.health.dmcare.databinding.FragmentDetailFactorDiabetesBinding
+import com.health.dmcare.databinding.FragmentDetailAktivitasFisikBinding
 import com.health.dmcare.models.DataCardDiabetes
 import com.health.dmcare.util.GenerateData
 
-class DetailFactorDiabetesFragment : Fragment() {
-    private var _binding: FragmentDetailFactorDiabetesBinding? = null
+class DetailAktivitasFisikFragment : Fragment() {
+    private var _binding: FragmentDetailAktivitasFisikBinding? = null
     private val binding get() = _binding!!
 
     private var player: ExoPlayer? = null
@@ -28,37 +27,25 @@ class DetailFactorDiabetesFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentDetailFactorDiabetesBinding.inflate(inflater, container, false)
+        _binding = FragmentDetailAktivitasFisikBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val items = GenerateData.faktorDiabetesMelitus()
-
         statusBarSetup()
         setupToolbar()
-        setupPlayerVideo()
-        setupRecyclerView(items)
-        setupDialog()
-    }
 
-    private fun setupDialog() {
-        AlertDialog.Builder(requireContext())
-            .setTitle(getString(R.string.title_renungan))
-            .setMessage(getString(R.string.content_renungan_factor_page))
-            .setPositiveButton(getString(R.string.oke)) { dialog, _ ->
-                dialog.dismiss()
-            }
-            .setCancelable(false)
-            .show()
+        val items = GenerateData.aktivitasFisik()
+        setupRecyclerView(items)
+        setupPlayerVideo()
     }
 
     private fun setupRecyclerView(items: List<DataCardDiabetes>) {
         val adapter = StaggeredAdapter(items)
         val layoutManager = StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL)
-        binding.rvDetailSignAndSymptoms.layoutManager = layoutManager
-        binding.rvDetailSignAndSymptoms.adapter = adapter
+        binding.rvAktivitasFisik.layoutManager = layoutManager
+        binding.rvAktivitasFisik.adapter = adapter
     }
 
     @Suppress("DEPRECATION")
@@ -81,14 +68,14 @@ class DetailFactorDiabetesFragment : Fragment() {
     }
 
     private fun setupPlayerVideo() {
-        val uri = MediaItem.fromUri("android.resource://${requireContext().packageName}/${R.raw.faktor_resiko}")
+        val uri = MediaItem.fromUri("android.resource://${requireContext().packageName}/${R.raw.aktivitas_fisik}")
 
         player = ExoPlayer.Builder(requireContext()).build().apply {
             setMediaItem(uri)
             prepare()
         }
 
-        binding.pvFaktorDiabetesMelitus.player = player
+        binding.pvAktivitasFisik.player = player
     }
 
     override fun onStop() {

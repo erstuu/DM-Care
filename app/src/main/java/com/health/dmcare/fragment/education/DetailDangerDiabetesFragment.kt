@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
+import androidx.appcompat.app.AlertDialog
 import androidx.core.content.ContextCompat
 import androidx.media3.common.MediaItem
 import androidx.media3.exoplayer.ExoPlayer
@@ -14,7 +15,7 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.health.dmcare.R
 import com.health.dmcare.adapter.StaggeredAdapter
 import com.health.dmcare.databinding.FragmentDetailDangerDiabetesBinding
-import com.health.dmcare.models.TandaGejalaDiabetes
+import com.health.dmcare.models.DataCardDiabetes
 import com.health.dmcare.util.GenerateData
 
 class DetailDangerDiabetesFragment : Fragment() {
@@ -39,9 +40,21 @@ class DetailDangerDiabetesFragment : Fragment() {
         setupToolbar()
         setupPlayerVideo()
         setupRecyclerView(items)
+        setupDialog()
     }
 
-    private fun setupRecyclerView(items: List<TandaGejalaDiabetes>) {
+    private fun setupDialog() {
+        AlertDialog.Builder(requireContext())
+            .setTitle(getString(R.string.title_renungan))
+            .setMessage(getString(R.string.content_renungan_danger_page))
+            .setPositiveButton(getString(R.string.oke)) { dialog, _ ->
+                dialog.dismiss()
+            }
+            .setCancelable(false)
+            .show()
+    }
+
+    private fun setupRecyclerView(items: List<DataCardDiabetes>) {
         val adapter = StaggeredAdapter(items)
         val layoutManager = StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL)
         binding.rvDetailSignAndSymptoms.layoutManager = layoutManager
@@ -84,8 +97,8 @@ class DetailDangerDiabetesFragment : Fragment() {
         player = null
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
+    override fun onDestroyView() {
+        super.onDestroyView()
         _binding = null
     }
 }

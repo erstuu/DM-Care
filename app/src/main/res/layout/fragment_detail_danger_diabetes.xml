@@ -52,8 +52,8 @@
 
         </androidx.cardview.widget.CardView>
 
-        <androidx.media3.ui.PlayerView
-            android:id="@+id/pv_bahaya_diabetes_melitus_yang_tidak_terkontrol"
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/pv_detail_danger_diabetes"
             android:layout_width="0dp"
             android:layout_height="200dp"
             android:layout_marginHorizontal="16dp"
@@ -61,6 +61,28 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/thumbnail_offline_detail_danger_diabetes"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_medium"
+                android:padding="16dp"
+                android:text="@string/nyalakan_internet_dan_ketuk_ulang_untuk_memutar_video"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.Material3.BodyLarge" />
+        </androidx.cardview.widget.CardView>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_detail_sign_and_symptoms"
@@ -71,7 +93,14 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/pv_bahaya_diabetes_melitus_yang_tidak_terkontrol" />
+            app:layout_constraintTop_toBottomOf="@+id/guideline7" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="383dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
 

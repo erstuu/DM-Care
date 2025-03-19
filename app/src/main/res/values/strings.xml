@@ -71,6 +71,36 @@
     <string name="keempat">Keempat</string>
     <string name="pedoman_persiapan_rujukan_dm_tipe_2_rujukan_mendesak_atau_pada_hari_yang_sama_dari_fasilitas_kesehatan_primer_puskesmas_harus_dilakukan_jika_ditemukan_salah_satu_dari_berikut_ini">Pedoman Persiapan Rujukan DM Tipe 2 Rujukan mendesak atau pada hari yang sama dari Fasilitas Kesehatan Primer (Puskesmas) harus dilakukan jika ditemukan salah satu dari berikut ini:</string>
     <string name="_1_keton_urin_lebih_dari_2_n2_dalam_terapi_oral_anti_diabetes_tunggal_atau_kombinasi_dalam_3_bulan_kadar_gula_darah_tidak_terkontrol_n3_hipoglikemia_berat_yang_tidak_teratasi_dan_tidak_membaik_dengan_tatalaksana_medis_n4_kecurigaan_klinis_diabetes_tipe_1_pada_pasien_yang_baru_didiagnosis_n5_gejala_tanda_komplikasi_seperti_penyakit_jantung_koroner_stroke_penurunan_penglihatan_krisis_hipertensi_anuria_atau_egfr_estimated_glomerular_filtration_rate_30_ml_menit_1_73_m2_n6_ulkus_diabetikum_yang_terinfeksi_dengan_atau_tanpa_gejala_infeksi_sistemik_gangrene_critical_limb_ischaemia"><![CDATA[1. Keton urin lebih dari 2+\n\n2. Dalam terapi oral anti diabetes tunggal atau kombinasi dalam 3 bulan kadar Gula darah tidak terkontrol\n\n3. Hipoglikemia berat yang tidak teratasi dan tidak membaik dengan tatalaksana medis.\n\n4. Kecurigaan klinis diabetes tipe 1 pada pasien yang baru didiagnosis\n\n5. Gejala/tanda komplikasi, seperti penyakit jantung koroner, stroke, penurunan penglihatan, krisis hipertensi, anuria atau eGFR (estimated glomerular filtration rate) <30 mL/menit/1,73 m2\n\n6. Ulkus diabetikum yang terinfeksi dengan atau tanpa gejala infeksi sistemik; gangrene, critical limb ischaemia]]></string>
+    <string name="pengobatan_jika_diperlukan">Pengobatan jika diperlukan</string>
+    <string name="gambar_panduan_kosumsi_obat">gambar panduan kosumsi obat</string>
+    <string name="panduan_konsumsi_obat_bila_diperlukan">Panduan Konsumsi Obat bila diperlukan</string>
+    <string name="gambar_doa">gambar doa</string>
+    <string name="pengaturan_nutrisi">Pengaturan Nutrisi</string>
+    <string name="gambar_pemanatauan_gula_darah">Gambar pemanatauan gula darah</string>
+    <string name="pemantauan_gula_ndarah_rutin">Pemantauan Gula\nDarah Rutin</string>
+    <string name="tujuan_pemeriksaan_glukosa_darah">Tujuan pemeriksaan glukosa darah :</string>
+    <string name="_1_mengetahui_apakah_sasaran_pengobatan_telah_tercapai_n2_melakukan_penyesuaian_dosis_obat">1. Mengetahui apakah sasaran pengobatan telah tercapai\n2. Melakukan penyesuaian dosis obat</string>
+    <string name="waktu_pelaksanaan">Waktu pelaksanaan :</string>
+    <string name="_1_saat_puasa_n2_sebelum_makan_2_jam_setelah_makan_atau_secara_acak_berkala_sesuai_dengan_kebutuhan_n3_frekuensi_pemeriksaan_dilakukan_setidaknya_satu_bulan_sekali_pemantauan_kadar_gula_darah_mandiri_dapat_dilakukan_dengan_menggunakan_darah_kapiler">1. Saat Puasa\n2. Sebelum makan, 2 jam setelah makan, atau secara acak berkala sesuai dengan kebutuhan\n3. Frekuensi pemeriksaan dilakukan setidaknya satu bulan sekali Pemantauan kadar gula darah mandiri dapat dilakukan dengan menggunakan darah kapiler</string>
+    <string name="perhatikan_jika">Perhatikan jika :</string>
+    <string name="_1_gula_darah_sewaktu_200_mg_dl_n2_gula_darah_puasa_tidak_ada_masukan_makanan_kalori_dalam_10_jam_terakhir_126_mg_dl_n3_gula_plasma_2_jam_180_mg_dl"><![CDATA[1. Gula darah sewaktu > 200 mg/dl\n2. Gula darah puasa (tidak ada masukan makanan/kalori dalam 10 jam terakhir) > 126 mg/dl\n3. Gula plasma 2 jam > 180 mg/dl]]></string>
+    <string name="thumbnail_offline_bahaya_diabetes">thumbnail offline bahaya diabetes</string>
+    <string name="thumbnail_offline_faktor_diabetes">thumbnail offline faktor diabetes</string>
+    <string name="thumbnail_offline_bahaya_diabetes_melitus_yang_tidak_terkontrol">Thumbnail offline bahaya diabetes melitus yang tidak terkontrol</string>
+    <string name="thumbnail_offline_detail_danger_diabetes_melitus">Thumbnail offline detail danger diabetes melitus</string>
+    <string name="thumbnail_offline_aktivitas_fisik">thumbnail offline aktivitas fisik</string>
+    <string name="thumbnail_offline_perawatan_kaki">thumbnail offline perawatan kaki</string>
+    <string name="thumbnail_offline_faktor_diabetes_melitus">thumbnail offline faktor diabetes melitus</string>
+    <string name="thumbnail_offline_panduan_konsumsi">thumbnail offline panduan konsumsi</string>
+    <string name="nyalakan_internet_dan_ketuk_ulang_untuk_memutar_video">Nyalakan Internet dan ketuk ulang untuk memutar video!</string>
+    <string name="nutrition_video_id">6o1iydByZkE</string>
+    <string name="treatment_video_id">5afqDahkWBk</string>
+    <string name="symptom_video_id">6deM6cHHkHw</string>
+    <string name="factor_video_id">Et5A_mSeYxk</string>
+    <string name="description_video_id">KafRjNXdPao</string>
+    <string name="danger_video_id">o8W4olzqCJw</string>
+    <string name="perawatan_kaki_video_id">jfiKs4tQPes</string>
+    <string name="aktivitas_fisik_video_id">IdgkzE1Rino</string>
 
     <!--  String Detail Sign and Symptoms  -->
 

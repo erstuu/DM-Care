@@ -52,12 +52,12 @@ dependencies {
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.androidx.lifecycle.livedata.ktx)
 
-    implementation("androidx.navigation:navigation-fragment-ktx:2.8.9")
-    implementation("androidx.navigation:navigation-ui-ktx:2.8.9")
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.navigation.ui.ktx)
 
-    implementation("androidx.media3:media3-exoplayer:1.5.1")
-    implementation("androidx.media3:media3-ui:1.5.1")
-    implementation("androidx.media3:media3-session:1.5.1")
+    implementation (libs.core)
 
-    implementation ("de.hdodenhof:circleimageview:3.1.0")
+    implementation (libs.circleimageview)
+
+    implementation(libs.androidx.viewpager2)
 }

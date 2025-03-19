@@ -6,18 +6,22 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
+import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
-import androidx.media3.common.MediaItem
-import androidx.media3.exoplayer.ExoPlayer
 import androidx.navigation.fragment.findNavController
 import com.health.dmcare.R
 import com.health.dmcare.databinding.FragmentTreatmentBinding
+import com.health.dmcare.util.OnlineCheckerHelper.isOnline
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
 
 class TreatmentFragment : Fragment() {
     private var _binding: FragmentTreatmentBinding? = null
     private val binding get() = _binding!!
 
-    private var player: ExoPlayer? = null
+    private lateinit var youTubePlayer: YouTubePlayerView
+    private lateinit var thumbnailCardView: CardView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -29,6 +33,8 @@ class TreatmentFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        youTubePlayer = binding.pvPanduanKonsumsi
+        thumbnailCardView = binding.thumbnailOfflineDetailPanduanKonsumsi
 
         setupAction()
         setupPlayerVideo()
@@ -36,14 +42,26 @@ class TreatmentFragment : Fragment() {
     }
 
     private fun setupPlayerVideo() {
-        val uri = MediaItem.fromUri("android.resource://${requireContext().packageName}/${R.raw.panduan_konsumsi}")
+        if (isOnline(requireContext())) {
+            youTubePlayer.visibility = View.VISIBLE
+            thumbnailCardView.visibility = View.GONE
 
-        player = ExoPlayer.Builder(requireContext()).build().apply {
-            setMediaItem(uri)
-            prepare()
+            lifecycle.addObserver(youTubePlayer)
+
+            youTubePlayer.addYouTubePlayerListener(object : AbstractYouTubePlayerListener() {
+                override fun onReady(youTubePlayer: YouTubePlayer) {
+                    val videoId = getString(R.string.treatment_video_id)
+                    youTubePlayer.cueVideo(videoId, 0f)
+                }
+            })
+        } else {
+            youTubePlayer.visibility = View.GONE
+            thumbnailCardView.visibility = View.VISIBLE
+
+            thumbnailCardView.setOnClickListener {
+                setupPlayerVideo()
+            }
         }
-
-        binding.pvPanduanKonsumsi.player = player
     }
 
     private fun setupAction() {
@@ -70,8 +88,7 @@ class TreatmentFragment : Fragment() {
 
     override fun onStop() {
         super.onStop()
-        player?.release()
-        player = null
+        youTubePlayer.release()
     }
 
     override fun onDestroyView() {

@@ -1,7 +1,6 @@
 package com.health.dmcare.activity
 
 import android.content.Intent
-import android.graphics.Color
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -11,7 +10,6 @@ import com.google.android.material.shape.RoundedCornerTreatment
 import com.google.android.material.shape.ShapeAppearanceModel
 import com.health.dmcare.R
 import com.health.dmcare.databinding.ActivityOnboardingBinding
-import com.google.android.material.shape.MaterialShapeDrawable
 
 class OnboardingActivity : AppCompatActivity() {
     private var _binding: ActivityOnboardingBinding? = null

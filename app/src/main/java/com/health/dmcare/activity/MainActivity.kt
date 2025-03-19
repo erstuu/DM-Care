@@ -1,7 +1,10 @@
 package com.health.dmcare.activity
 
 import android.os.Bundle
+import android.view.View
+import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.health.dmcare.R
@@ -32,7 +35,10 @@ class MainActivity : AppCompatActivity() {
                 R.id.detailDescriptionDiabetesFragment,
                 R.id.detailSignAndSymptomsFragment,
                 R.id.detailDangerDiabetesFragment,
-                R.id.detailFactorDiabetesFragment -> {
+                R.id.detailFactorDiabetesFragment,
+                R.id.detailPerawatanKakiFragment,
+                R.id.detailAktivitasFisikFragment,
+                R.id.detailFootExerciseFragment -> {
                     bottomNavigation.visibility = android.view.View.GONE
                 }
                 else -> {

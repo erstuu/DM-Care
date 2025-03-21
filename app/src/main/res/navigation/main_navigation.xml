@@ -12,16 +12,32 @@
         tools:layout="@layout/fragment_education" >
         <action
             android:id="@+id/action_educationFragment_to_detailDescriptionDiabetesFragment"
-            app:destination="@id/detailDescriptionDiabetesFragment" />
+            app:destination="@id/detailDescriptionDiabetesFragment"
+            app:enterAnim="@anim/slide_to_right"
+            app:exitAnim="@anim/slide_to_right"
+            app:popEnterAnim="@anim/slide_to_left"
+            app:popExitAnim="@anim/slide_to_left" />
         <action
             android:id="@+id/action_educationFragment_to_detailSignAndSymptomsFragment"
-            app:destination="@id/detailSignAndSymptomsFragment" />
+            app:destination="@id/detailSignAndSymptomsFragment"
+            app:enterAnim="@anim/slide_to_right"
+            app:exitAnim="@anim/slide_to_right"
+            app:popEnterAnim="@anim/slide_to_left"
+            app:popExitAnim="@anim/slide_to_left" />
         <action
             android:id="@+id/action_educationFragment_to_detailDangerDiabetesFragment"
-            app:destination="@id/detailDangerDiabetesFragment" />
+            app:destination="@id/detailDangerDiabetesFragment"
+            app:enterAnim="@anim/slide_to_right"
+            app:exitAnim="@anim/slide_to_right"
+            app:popEnterAnim="@anim/slide_to_left"
+            app:popExitAnim="@anim/slide_to_left" />
         <action
             android:id="@+id/action_educationFragment_to_detailFactorDiabetesFragment"
-            app:destination="@id/detailFactorDiabetesFragment" />
+            app:destination="@id/detailFactorDiabetesFragment"
+            app:enterAnim="@anim/slide_to_right"
+            app:exitAnim="@anim/slide_to_right"
+            app:popEnterAnim="@anim/slide_to_left"
+            app:popExitAnim="@anim/slide_to_left" />
     </fragment>
     <fragment
         android:id="@+id/detailDescriptionDiabetesFragment"
@@ -71,13 +87,25 @@
         tools:layout="@layout/fragment_activities" >
         <action
             android:id="@+id/action_activitiesFragment_to_detailAktivitasFisikFragment"
-            app:destination="@id/detailAktivitasFisikFragment" />
+            app:destination="@id/detailAktivitasFisikFragment"
+            app:enterAnim="@anim/slide_to_right"
+            app:exitAnim="@anim/slide_to_right"
+            app:popEnterAnim="@anim/slide_to_left"
+            app:popExitAnim="@anim/slide_to_left" />
         <action
             android:id="@+id/action_activitiesFragment_to_detailPerawatanKakiFragment"
-            app:destination="@id/detailPerawatanKakiFragment" />
+            app:destination="@id/detailPerawatanKakiFragment"
+            app:enterAnim="@anim/slide_to_right"
+            app:exitAnim="@anim/slide_to_right"
+            app:popEnterAnim="@anim/slide_to_left"
+            app:popExitAnim="@anim/slide_to_left" />
         <action
             android:id="@+id/action_activitiesFragment_to_detailFootExerciseFragment"
-            app:destination="@id/detailFootExerciseFragment" />
+            app:destination="@id/detailFootExerciseFragment"
+            app:enterAnim="@anim/slide_to_right"
+            app:exitAnim="@anim/slide_to_right"
+            app:popEnterAnim="@anim/slide_to_left"
+            app:popExitAnim="@anim/slide_to_left" />
     </fragment>
     <fragment
         android:id="@+id/treatmentFragment"
@@ -86,13 +114,21 @@
         tools:layout="@layout/fragment_treatment" >
         <action
             android:id="@+id/action_treatmentFragment2_to_detailGuideComsumptionFragment"
-            app:destination="@id/detailGuideComsumptionFragment" />
+            app:destination="@id/detailGuideComsumptionFragment"
+            app:enterAnim="@anim/slide_to_right"
+            app:exitAnim="@anim/slide_to_right"
+            app:popEnterAnim="@anim/slide_to_left"
+            app:popExitAnim="@anim/slide_to_left" />
         <action
             android:id="@+id/action_treatmentFragment2_to_detailGuideComsumptionFragment2"
-            app:destination="@id/detailGuideComsumptionFragment2" />
+            app:destination="@id/detailGuideComsumptionFragment2"
+            app:enterAnim="@anim/slide_to_right"
+            app:popEnterAnim="@anim/slide_to_left" />
         <action
             android:id="@+id/action_treatmentFragment2_to_detailPrayFragment"
-            app:destination="@id/detailPrayFragment" />
+            app:destination="@id/detailPrayFragment"
+            app:enterAnim="@anim/slide_to_right"
+            app:popEnterAnim="@anim/slide_to_left" />
     </fragment>
     <fragment
         android:id="@+id/detailGuideComsumptionFragment"

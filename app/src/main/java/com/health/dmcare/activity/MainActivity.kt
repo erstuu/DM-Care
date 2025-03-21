@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         val bottomNavigation = binding.bottomNavigation
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         val navController = navHostFragment.navController
+
         bottomNavigation.setupWithNavController(navController)
 
         // Hide bottom navigation bar when navigating to certain fragments

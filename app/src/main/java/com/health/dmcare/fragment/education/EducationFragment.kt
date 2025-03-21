@@ -1,7 +1,6 @@
 package com.health.dmcare.fragment.education
 
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -78,23 +77,19 @@ class EducationFragment : Fragment() {
 
     private fun setupAction() {
         binding.buttonDefinisiDiabetes.setOnClickListener {
-            val toDetailDescriptionDiabetesFragment = EducationFragmentDirections.actionEducationFragmentToDetailDescriptionDiabetesFragment()
-            findNavController().navigate(toDetailDescriptionDiabetesFragment)
+            findNavController().navigate(R.id.action_educationFragment_to_detailDescriptionDiabetesFragment)
         }
 
         binding.lihatSelengkapnya.setOnClickListener {
-            val toDetailDescriptionDiabetesFragment = EducationFragmentDirections.actionEducationFragmentToDetailSignAndSymptomsFragment()
-            findNavController().navigate(toDetailDescriptionDiabetesFragment)
+            findNavController().navigate(R.id.action_educationFragment_to_detailSignAndSymptomsFragment)
         }
 
         binding.bahayaDiabetesMelitusCard.setOnClickListener {
-            val toDetailDescriptionDiabetesFragment = EducationFragmentDirections.actionEducationFragmentToDetailDangerDiabetesFragment()
-            findNavController().navigate(toDetailDescriptionDiabetesFragment)
+            findNavController().navigate(R.id.action_educationFragment_to_detailDangerDiabetesFragment)
         }
 
         binding.faktorDiabetesMelitusCard.setOnClickListener {
-            val toDetailDescriptionDiabetesFragment = EducationFragmentDirections.actionEducationFragmentToDetailFactorDiabetesFragment()
-            findNavController().navigate(toDetailDescriptionDiabetesFragment)
+            findNavController().navigate(R.id.action_educationFragment_to_detailFactorDiabetesFragment)
         }
     }
 

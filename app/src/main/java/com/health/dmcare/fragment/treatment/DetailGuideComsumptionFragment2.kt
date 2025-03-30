@@ -10,6 +10,7 @@ import androidx.core.content.ContextCompat
 import androidx.navigation.fragment.findNavController
 import com.health.dmcare.R
 import com.health.dmcare.databinding.FragmentDetailGuideComsumption2Binding
+import com.health.dmcare.util.TextFormatterHelper
 
 class DetailGuideComsumptionFragment2 : Fragment() {
     private var _binding: FragmentDetailGuideComsumption2Binding? = null
@@ -28,6 +29,7 @@ class DetailGuideComsumptionFragment2 : Fragment() {
 
         statusBarSetup()
         setupToolbar()
+        formatText()
     }
 
     @Suppress("DEPRECATION")
@@ -47,6 +49,14 @@ class DetailGuideComsumptionFragment2 : Fragment() {
         toolbar.setNavigationOnClickListener {
             findNavController().navigateUp()
         }
+    }
+
+    private fun formatText() {
+        TextFormatterHelper.makeNumberedList(
+            requireContext(),
+            binding.bodyOfPertama,
+            R.array.body_of_pertama
+        )
     }
 
     override fun onDestroyView() {

@@ -9,6 +9,7 @@ import android.view.WindowManager
 import androidx.core.content.ContextCompat
 import com.health.dmcare.R
 import com.health.dmcare.databinding.FragmentMonitoringBinding
+import com.health.dmcare.util.TextFormatterHelper
 
 class MonitoringFragment : Fragment() {
     private var _binding: FragmentMonitoringBinding? = null
@@ -25,6 +26,8 @@ class MonitoringFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         statusBarSetup()
+
+        formatText()
     }
 
     @Suppress("DEPRECATION")
@@ -35,6 +38,26 @@ class MonitoringFragment : Fragment() {
             statusBarColor = ContextCompat.getColor(requireContext(), R.color.background)
             decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LAYOUT_STABLE or View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
         }
+    }
+
+    private fun formatText() {
+        TextFormatterHelper.makeNumberedList(
+            requireContext(),
+            binding.bodyOfTujuanPemeriksaanGlukosaDarah,
+            R.array.tujuan_pemeriksaan_gula_darah
+        )
+
+        TextFormatterHelper.makeNumberedList(
+            requireContext(),
+            binding.bodyOfWaktuPelaksanaan,
+            R.array.waktu_pelaksanaan
+        )
+
+        TextFormatterHelper.makeNumberedList(
+            requireContext(),
+            binding.bodyOfPerhatikanJika,
+            R.array.perhatikan_jika
+        )
     }
 
     override fun onDestroyView() {

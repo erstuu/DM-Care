@@ -12,6 +12,7 @@ import androidx.navigation.fragment.findNavController
 import com.health.dmcare.R
 import com.health.dmcare.databinding.FragmentDetailDescriptionDiabetesBinding
 import com.health.dmcare.util.OnlineCheckerHelper.isOnline
+import com.health.dmcare.util.TextFormatterHelper
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
@@ -38,6 +39,7 @@ class DetailDescriptionDiabetesFragment : Fragment() {
 
         statusBarSetup()
         setupToolbar()
+        formatText()
         setupPlayerVideo()
     }
 
@@ -48,6 +50,14 @@ class DetailDescriptionDiabetesFragment : Fragment() {
         toolbar.setNavigationOnClickListener {
             findNavController().navigateUp()
         }
+    }
+
+    private fun formatText() {
+        TextFormatterHelper.makeNumberedList(
+            requireContext(),
+            binding.detailOfBodyApakahDiabetesMelitusItu,
+            R.array.apakah_diabetes_itu
+        )
     }
 
     private fun setupPlayerVideo() {

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  Edukasi  -->
+    <string-array name="apakah_diabetes_itu">
+        <item>Gula darah sewaktu > 200 mg/dl</item>
+        <item>Gula darah puasa (tidak ada masukan makanan/kalori dalam 10 jam terakhir) > 126 mg/dl</item>
+        <item>Gula plasma 2 jam > 180 mg/dl</item>
+    </string-array>
+
+    <!--  Pemantauan Gula Darah  -->
+    <string-array name="tujuan_pemeriksaan_gula_darah">
+        <item>Mengetahui apakah sasaran pengobatan telah tercapai.\n</item>
+        <item>Melakukan penyesuaian dosis obat.\n</item>
+    </string-array>
+
+    <string-array name="waktu_pelaksanaan">
+        <item>Saat Puasa.\n</item>
+        <item>Sebelum makan, 2 jam setelah makan, atau secara acak berkala sesuai dengan kebutuhan.\n</item>
+        <item>Frekuensi pemeriksaan dilakukan setidaknya satu bulan sekali.\n</item>
+        <item>Pemantauan kadar gula darah mandiri dapat dilakukan dengan menggunakan darah kapiler.\n</item>
+    </string-array>
+
+    <string-array name="perhatikan_jika">
+        <item>Gula darah sewaktu > 200 mg/dl.\n</item>
+        <item>Gula darah puasa (tidak ada masukan makanan/kalori dalam 10 jam terakhir) > 126 mg/dl.\n</item>
+        <item>Gula plasma 2 jam > 180 mg/dl.\n</item>
+    </string-array>
+
+    <!--  Pengobatan  -->
+    <string-array name="body_of_keempat">
+        <item>Keton urin lebih dari 2+.\n</item>
+        <item>Dalam terapi oral anti diabetes tunggal atau kombinasi dalam 3 bulan kadar Gula darah tidak terkontrol.\n</item>
+        <item>Hipoglikemia berat yang tidak teratasi dan tidak membaik dengan tatalaksana medis.\n</item>
+        <item>Kecurigaan klinis diabetes tipe 1 pada pasien yang baru didiagnosis.\n</item>
+        <item>Gejala/tanda komplikasi, seperti penyakit jantung koroner, stroke, penurunan penglihatan, krisis hipertensi, anuria atau eGFR (estimated glomerular filtration rate) kurang dari 30 mL/menit/1,73 m2.\n</item>
+        <item>Ulkus diabetikum yang terinfeksi dengan atau tanpa gejala infeksi sistemik; gangrene, critical limb ischaemia.\n</item>
+    </string-array>
+
+    <string-array name="body_of_pertama">
+        <item>Terapi obat diperlukan apabila dengan terapi seperti olahraga, diet dan perubahan gaya hidup namun kadar gula darah tidak berada dalam rentang normal.\n</item>
+        <item>Konsultasikan kondisi tersebut untuk mendapatkan terapi obat dari dokter ditempat pemeriksaan Kesehatan.\n</item>
+        <item>Dosis obat diabetes tipe 2 bervariasi tergantung pada jenis obat, kondisi pasien, dan kadar gula darah.\n</item>
+        <item>Penyesuaian dosis secara berkala, tergantung pada respons tubuh terhadap pengobatan.\n</item>
+        <item>Beberapa obat mungkin perlu dikonsumsi 1 sampai 3 kali sehari, tergantung pada jenis obat dan kondisi pasien.\n</item>
+        <item>Perhatikan waktu konsumsi obat, bersama makanan atau sesudah makan seperti metformin, sebelum makan seperti glibenclamide, glimepiride, gliclazide.\n</item>
+    </string-array>
+</resources>

@@ -170,11 +170,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:fontFamily="@font/poppins"
-            android:layout_marginBottom="16dp"
-            android:text="@string/_1_keton_urin_lebih_dari_2_n2_dalam_terapi_oral_anti_diabetes_tunggal_atau_kombinasi_dalam_3_bulan_kadar_gula_darah_tidak_terkontrol_n3_hipoglikemia_berat_yang_tidak_teratasi_dan_tidak_membaik_dengan_tatalaksana_medis_n4_kecurigaan_klinis_diabetes_tipe_1_pada_pasien_yang_baru_didiagnosis_n5_gejala_tanda_komplikasi_seperti_penyakit_jantung_koroner_stroke_penurunan_penglihatan_krisis_hipertensi_anuria_atau_egfr_estimated_glomerular_filtration_rate_30_ml_menit_1_73_m2_n6_ulkus_diabetikum_yang_terinfeksi_dengan_atau_tanpa_gejala_infeksi_sistemik_gangrene_critical_limb_ischaemia"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
             android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/sub_keempat"
-            app:layout_constraintTop_toBottomOf="@+id/sub_keempat" />
+            app:layout_constraintTop_toBottomOf="@+id/sub_keempat"
+            tools:text="@string/_1_keton_urin_lebih_dari_2_n2_dalam_terapi_oral_anti_diabetes_tunggal_atau_kombinasi_dalam_3_bulan_kadar_gula_darah_tidak_terkontrol_n3_hipoglikemia_berat_yang_tidak_teratasi_dan_tidak_membaik_dengan_tatalaksana_medis_n4_kecurigaan_klinis_diabetes_tipe_1_pada_pasien_yang_baru_didiagnosis_n5_gejala_tanda_komplikasi_seperti_penyakit_jantung_koroner_stroke_penurunan_penglihatan_krisis_hipertensi_anuria_atau_egfr_estimated_glomerular_filtration_rate_30_ml_menit_1_73_m2_n6_ulkus_diabetikum_yang_terinfeksi_dengan_atau_tanpa_gejala_infeksi_sistemik_gangrene_critical_limb_ischaemia" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

@@ -97,7 +97,7 @@ object GenerateData {
             ),
             DataCardDiabetes(
                 R.drawable.bd_penyakit_neropati,
-                "Neronopati diabetik"
+                "Nefropati diabetik"
             ),
         )
     }
@@ -106,7 +106,7 @@ object GenerateData {
         return listOf(
             DataCardDiabetes(
                 R.drawable.fa_berat_badan_berlebih,
-                "Bera badan\nberlebih"
+                "Berat badan\nberlebih"
             ),
             DataCardDiabetes(
                 R.drawable.fa_kurang_aktivitas_fisik,
@@ -118,11 +118,11 @@ object GenerateData {
             ),
             DataCardDiabetes(
                 R.drawable.fa_riwayat_hipertensi,
-                "Riwat hipertensi\n> 140/90 mmHg"
+                "Riwayat hipertensi\n> 140/90 mmHg"
             ),
             DataCardDiabetes(
                 R.drawable.fa_riwayat_penyakit_kardiovaskuler,
-                "Riwat penyakit kardiovaskuler"
+                "Riwayat penyakit kardiovaskuler"
             ),
             DataCardDiabetes(
                 R.drawable.fa_usia_lanjut,
@@ -130,7 +130,7 @@ object GenerateData {
             ),
             DataCardDiabetes(
                 R.drawable.fa_obesitas_berat,
-                "Obeistas berat"
+                "Obesitas berat"
             ),
         )
     }

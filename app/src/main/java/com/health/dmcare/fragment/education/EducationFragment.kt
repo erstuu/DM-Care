@@ -91,6 +91,10 @@ class EducationFragment : Fragment() {
         binding.faktorDiabetesMelitusCard.setOnClickListener {
             findNavController().navigate(R.id.action_educationFragment_to_detailFactorDiabetesFragment)
         }
+
+        binding.cvTentangKami.setOnClickListener{
+            findNavController().navigate(R.id.action_educationFragment_to_aboutFragment)
+        }
     }
 
     override fun onDestroyView() {

@@ -37,6 +37,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.detailFactorDiabetesFragment,
                 R.id.detailPerawatanKakiFragment,
                 R.id.detailAktivitasFisikFragment,
+                R.id.aboutFragment,
                 R.id.detailFootExerciseFragment -> {
                     bottomNavigation.visibility = View.GONE
                 }

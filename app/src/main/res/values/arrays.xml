@@ -44,4 +44,15 @@
         <item>Beberapa obat mungkin perlu dikonsumsi 1 sampai 3 kali sehari, tergantung pada jenis obat dan kondisi pasien.\n</item>
         <item>Perhatikan waktu konsumsi obat, bersama makanan atau sesudah makan seperti metformin, sebelum makan seperti glibenclamide, glimepiride, gliclazide.\n</item>
     </string-array>
+
+    <string-array name="list_pengembang_array">
+        <item>Erna Safariyah sebagai Ketua</item>
+        <item>Fathia Frazna Az-Zahra sebagai pengembang mobile</item>
+        <item>Irawan Danismaya sebagai design</item>
+        <item>Amir Hamzah sebagai design</item>
+        <item>Siti Um Um Andriani sebagai design</item>
+        <item>Marcella Oktaviani logistik</item>
+        <item>Resti Dwi Dayana logistik</item>
+        <item>Restu Gede Purnama dari TI sebagai pengembang mobile</item>
+    </string-array>
 </resources>

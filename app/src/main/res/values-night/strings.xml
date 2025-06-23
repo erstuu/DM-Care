@@ -97,18 +97,23 @@
     <string name="symptom_video_id">6deM6cHHkHw</string>
     <string name="factor_video_id">Et5A_mSeYxk</string>
     <string name="description_video_id">KafRjNXdPao</string>
+    <string name="foot_exercise_tutorial_video_id">P9kaoFNvVnQ</string>
     <string name="danger_video_id">o8W4olzqCJw</string>
     <string name="perawatan_kaki_video_id">jfiKs4tQPes</string>
     <string name="aktivitas_fisik_video_id">IdgkzE1Rino</string>
     <string name="tentang_kami">Tentang Kami</string>
     <string name="apa_itu_dmcarenurse">Apa itu DM Care Nurse?</string>
     <string name="dmcarenurse_adalah_aplikasi_edukasi_perawatan_diabetes_mellitus_untuk_membantu_penderita_dm_melakukan_perawatan_diri_di_rumah_secara_mandiri_dengan_tujuan_untuk_mencegah_komplikasi_dari_penyakit_dm_yg_diderita">DMCareNurse adalah aplikasi edukasi perawatan Diabetes Mellitus untuk membantu penderita DM melakukan perawatan diri di Rumah secara mandiri dengan tujuan untuk mencegah komplikasi dari penyakit DM yg diderita.</string>
-    <string name="aplikasi_ini_terdiri_dari_beberapa_fitur_yang_menyediakan_informasi_terkait_dgn_edukasi_nutrisi_pemantauan_aktivitas_dan_panduan_pengobatan_selain_itu_aplikasi_ini_juga_dilengkapi_dgn_dukungan_spiritual_spt_doa_dan_hadist">Aplikasi ini terdiri dari beberapa fitur yang menyediakan informasi terkait dgn edukasi, nutrisi, pemantauan, aktivitas, dan panduan pengobatan. Selain itu aplikasi ini juga dilengkapi dgn dukungan spiritual spt doa dan hadist.</string>
+    <string name="aplikasi_ini_terdiri_dari_beberapa_fitur_yang_menyediakan_informasi_terkait_dgn_edukasi_nutrisi_pemantauan_aktivitas_dan_panduan_pengobatan_selain_itu_aplikasi_ini_juga_dilengkapi_dgn_dukungan_spiritual_spt_doa_dan_hadist">Aplikasi ini terdiri dari beberapa fitur yang menyediakan informasi terkait dengan edukasi, nutrisi, pemantauan, aktivitas, dan panduan pengobatan. Selain itu aplikasi ini juga dilengkapi dengan dukungan spiritual spt doa dan hadist.</string>
     <string name="aplikasi_ini_dikembangkan_oleh_tim_universitas_muhammadiyah_sukabumi_utk_program_hibah_penelitian_yg_diselenggarakan_oleh_risetmu">Aplikasi ini dikembangkan oleh tim Universitas Muhammadiyah Sukabumi untuk program hibah penelitian yg diselenggarakan oleh RisetMu.</string>
     <string name="tim_pengembang_aplikasi_terdiri_dari">Tim pengembang Aplikasi terdiri dari :</string>
     <string name="didukung_oleh">Didukung Oleh :</string>
     <string name="logo_riset_mu">logo riset mu</string>
     <string name="logo_ummi">logo ummi</string>
     <string name="logo_muhammadiyah">logo muhammadiyah</string>
+    <string name="video_tutorial_aktivitas_fisik">Video Tutorial Foot Exercise</string>
+    <string name="tahapan_foot_exercise">Tahapan Foot Exercise</string>
+    <string name="berikut_adalah_video_tutorial_latihan_kaki_yang_dapat_membantu_anda_memahami_gerakan_dengan_lebih_baik_pastikan_untuk_mengikuti_instruksi_dengan_benar">Berikut adalah video tutorial latihan kaki yang dapat membantu Anda memahami gerakan dengan lebih baik. Pastikan untuk mengikuti instruksi dengan benar.</string>
+    <string name="foot_exercise_video_tutorial">Foot Exercise Video Tutorial</string>
 
 </resources>

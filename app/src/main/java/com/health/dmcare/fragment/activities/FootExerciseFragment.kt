@@ -11,17 +11,19 @@ import androidx.annotation.RequiresApi
 import androidx.core.content.ContextCompat
 import androidx.navigation.fragment.findNavController
 import com.health.dmcare.R
-import com.health.dmcare.databinding.FragmentActivitiesBinding
+import com.health.dmcare.databinding.FragmentFootExerciseBinding
 
-class ActivitiesFragment : Fragment() {
-    private var _binding: FragmentActivitiesBinding? = null
+class FootExerciseFragment : Fragment() {
+
+    private var _binding: FragmentFootExerciseBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentActivitiesBinding.inflate(inflater, container, false)
+        // Inflate the layout for this fragment
+        _binding = FragmentFootExerciseBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -34,14 +36,11 @@ class ActivitiesFragment : Fragment() {
     }
 
     private fun setupAction() {
-        binding.aktivitasFisikCard.setOnClickListener {
-            findNavController().navigate(R.id.action_activitiesFragment_to_detailAktivitasFisikFragment)
-        }
-        binding.perawatanKakiCard.setOnClickListener {
-            findNavController().navigate(R.id.action_activitiesFragment_to_detailPerawatanKakiFragment)
-        }
         binding.footExerciseCard.setOnClickListener {
-            findNavController().navigate(R.id.action_activitiesFragment_to_footExerciseFragment)
+            findNavController().navigate(R.id.action_footExerciseFragment_to_detailFootExerciseFragment)
+        }
+        binding.videoFootExerciseCard.setOnClickListener {
+            findNavController().navigate(R.id.action_footExerciseFragment_to_footExerciseVideoFragment)
         }
     }
 

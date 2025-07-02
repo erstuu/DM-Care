@@ -1,5 +1,6 @@
 package com.health.dmcare.fragment
 
+import android.os.Build
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -22,7 +23,6 @@ import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTube
 class NutritionFragment : Fragment() {
     private var _binding: FragmentNutritionBinding? = null
     private val binding get() = _binding!!
-
     private lateinit var youTubePlayer: YouTubePlayerView
     private lateinit var thumbnailCardView: CardView
 
@@ -33,7 +33,6 @@ class NutritionFragment : Fragment() {
         _binding = FragmentNutritionBinding.inflate(inflater, container, false)
         return binding.root
     }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         youTubePlayer = binding.pvFaktorDiabetesMelitus
@@ -82,7 +81,13 @@ class NutritionFragment : Fragment() {
             addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
             clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
             statusBarColor = ContextCompat.getColor(requireContext(), R.color.background)
-            decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LAYOUT_STABLE or View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
+
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                decorView.systemUiVisibility =
+                    View.SYSTEM_UI_FLAG_LAYOUT_STABLE or View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
+            } else {
+                decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+            }
         }
     }
 

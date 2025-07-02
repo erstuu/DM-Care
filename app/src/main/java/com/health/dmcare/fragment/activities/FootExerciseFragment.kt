@@ -33,6 +33,7 @@ class FootExerciseFragment : Fragment() {
 
         setupAction()
         statusBarSetup()
+        setupToolbar()
     }
 
     private fun setupAction() {
@@ -52,6 +53,15 @@ class FootExerciseFragment : Fragment() {
             clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
             statusBarColor = ContextCompat.getColor(requireContext(), R.color.background)
             decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LAYOUT_STABLE or View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
+        }
+    }
+
+    private fun setupToolbar() {
+        val toolbar = binding.toolbar
+        toolbar.isTitleCentered = true
+        toolbar.setNavigationIcon(R.drawable.ic_arrow_back_ios_new_24)
+        toolbar.setNavigationOnClickListener {
+            findNavController().navigateUp()
         }
     }
 

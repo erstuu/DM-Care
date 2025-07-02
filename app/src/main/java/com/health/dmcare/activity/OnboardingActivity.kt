@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.shape.RoundedCornerTreatment
@@ -50,7 +51,9 @@ class OnboardingActivity : AppCompatActivity() {
         binding.materialCardViewOnboarding.shapeAppearanceModel = shapeAppearanceModel
         binding.materialCardViewOnboarding.strokeWidth = 0
         binding.materialCardViewOnboarding.elevation = 4f
-        binding.materialCardViewOnboarding.setCardBackgroundColor(getColor(R.color.white))
+        binding.materialCardViewOnboarding.setCardBackgroundColor(
+            ContextCompat.getColor(this, R.color.white)
+        )
     }
 
     override fun onDestroy() {
